@@ -1,0 +1,49 @@
+{
+  "name": "@stdlib/math-base-assert-is-infinite",
+  "version": "0.0.0",
+  "description": "Test if a double-precision floating-point numeric value is infinite.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/math-base-assert-is-infinite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "assertion",
+    "assert",
+    "utilities",
+    "utility",
+    "utils",
+    "util",
+    "math",
+    "mathematics",
+    "ieee754",
+    "floating-point",
+    "float",
+    "double",
+    "dbl",
+    "number",
+    "numeric",
+    "positive",
+    "negative",
+    "infinity",
+    "inf",
+    "is",
+    "isinf",
+    "isinfinite",
+    "infinite",
+    "type",
+    "check"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}

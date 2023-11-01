@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,49 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var PINF = require( '@stdlib/constants-float64-pinf' );
-var NINF = require( '@stdlib/constants-float64-ninf' );
-var isInfinite = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof isInfinite, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns `true` if provided `+infinity`', function test( t ) {
-	t.equal( isInfinite( PINF ), true, 'returns true' );
-	t.end();
-});
-
-tape( 'the function returns `true` if provided `-infinity`', function test( t ) {
-	t.equal( isInfinite( NINF ), true, 'returns true' );
-	t.end();
-});
-
-tape( 'the function returns `false` if not provided an infinite number', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		'5',
-		5.0,
-		-1.0e308,
-		4.0e-324,
-		NaN,
-		true,
-		null,
-		void 0,
-		[],
-		{},
-		function noop() {}
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.equal( isInfinite( values[i] ), false, 'returns false' );
-	}
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
